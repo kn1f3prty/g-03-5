@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cabecalho {
+    background-color:  #db9df2;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.cabecalho-imagem{
+    width: 20%;
+}
+
+.cabecalho-lista-item{
+	display: inline-block;
+	margin: 0 25px;                            
+	font-size: 20px;
+    padding: 15px 0px;
+}
+
+
+/* inicio da seção escola */
+.escola-imagem{
+	width: 25%;
+}
+
+.escola{
+	background-image: linear-gradient(#db9df2,#f9fbfc);
+	color: black;
+    font-size: 12px;
+	display : flex;
+	justify-content: center;
+	align-items: center; 	
+	padding: 24px 0;
+}
+
+.escola-div-conteudo{
+	width: 35%;
+}
+
+.escola-titulo {  
+	padding: 24px 0;
+}
+
+
+
+/* estudante ... gatinhos */
+.estudante{
+    padding: 24px 0;
+    display: grid;
+}
+.estudante-imagem{
+    width: 200px;
+}
+
+.estudante-titulo{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.estudante-descricao{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    
+}
+
+.estudante-icone{
+    width: 24px;
+    padding: 8px 8px;
+}
+
+
+.estudante-todos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+/* inicio do rodapé*/
+.rodape{
+    background-color:  #db9df2;
+    text-align: center;
+}
+
+.rodape-imagem{
+    height: 50px;
+    padding: 12px 0;
+   
+}
+li {
+    float: left;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+}
+
+li.dropdown {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #db9df2;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
